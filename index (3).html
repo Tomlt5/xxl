@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>	</title>
+	<style type="text/css">
+		#xxx{
+background-image: url(123.jfif);
+		}
+		#vvs{
+			width: 100%;
+			height: 100vh;
+			background-color: #000000;
+			text-align: center;		}
+		body{
+			margin: 0;
+		}
+		#bbc{
+			cursor: pointer;
+			width: 400px;
+			height: 200px;
+			border: 5px solid white;
+			margin: 50vh 50%;
+			position: absolute;
+			z-index: 1;
+			padding: 20px;
+				}
+				.a123{
+					color: white;
+					font-size: 20px;
+				}
+		#a667{
+			width: 400px;
+			height: 200px;
+			border: 5px solid white;
+			margin: 50vh 50%;
+		}
+
+
+	</style>
+</head>
+<body id="xxx">
+	<script type="text/javascript">
+        function myFunction()
+        {
+            document.getElementById("vvs").remove();
+            var audio = new Audio("Sound.mp3");
+            audio.play();
+        }
+        var value = 0;
+        function changeBack(){
+
+        }
+
+        setInterval(function changeBack(){if(value >= 2)
+                value = 0;
+
+            if(value == 0)
+                document.getElementById("xxx").style.backgroundImage = "Url(123.jfif)";
+            else if(value == 1)
+                document.getElementById("xxx").style.backgroundImage = "Url(888.jfif)";
+            value++;
+            }, 1000)
+    </script>
+<div id="vvs">
+	<div id="bbc" onclick="myFunction()">
+		<p class="a123" id="xxl">
+			на сайте может содержаться контент не для слабонервных		
+		</p>
+		<h1 class="a123">
+			Продолжить?
+		</h1>
+		
+	</div>	
+</div>
+<audio>
+	<source src="Sound.mp3" type="audio/mpeg">
+</audio>
+<img id="a667" src="456.gif">
+
+</body>
+</html>
